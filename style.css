@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  background-color: hsl(218, 23%, 16%);
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  margin: 33vh auto;
+  background-color: hsl(217, 19%, 24%);
+  width: 550px;
+  padding: 30px 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.title {
+  padding: 0 0 20px;
+  color: hsl(150, 100%, 66%);
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+#advice {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+hr {
+  margin: 30px 0;
+  width: 100%;
+  border: 0.1px solid hsl(217, 19%, 38%);
+}
+
+button {
+  cursor: pointer;
+  left: 45%;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  border: 0;
+}
+
+button:hover {
+  box-shadow: 0px 0px 50px 5px hsl(150, 100%, 66%);
+}
+
+.transparent {
+  background-color: transparent;
+  cursor: auto;
+}
+
+.transparent:hover {
+  box-shadow: none;
+}
+
+.transparent img {
+  display: none;
+}
+
+.transparent .lds-roller {
+  display: inline-block;
+}
+
+.lds-roller {
+  display: none;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  transform: translate(-10px, -10px);
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
