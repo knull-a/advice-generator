@@ -177,3 +177,9 @@ button:hover {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 560px) {
+  .main {
+    width: 370px;
+  }
+}
