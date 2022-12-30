@@ -10,14 +10,14 @@ body {
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
   background-color: hsl(218, 23%, 16%);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .main {
   position: relative;
   margin: 33vh auto;
   background-color: hsl(217, 19%, 24%);
-  width: 550px;
+  max-width: 550px;
   padding: 30px 50px;
   text-align: center;
   border-radius: 10px;
@@ -178,8 +178,3 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 560px) {
-  .main {
-    width: 370px;
-  }
-}
